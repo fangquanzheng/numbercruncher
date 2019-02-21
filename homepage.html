@@ -1,1 +1,56 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Number Cruncher</title> 
+	</head>
+	<body>
+	<p>
+	Numbwer: 11,4,41,50,7,19,8,18,2,6,43,6,20,43,2,23,12,24,31,29
+	</p>
+	<button onclick=step1() type = "button" >mean</button>
+	<button onclick=step2() type = "button" >mode</button>
+	<button onclick=step3() type = "button" >median</button>
+	<button onclick=step4() type = "button" >Explain the reduce method</button>
+	</body>
+	<div id = "mean" style="display :none">
+	<p>mean is 19.95</p>
+	</div>
+	<div id = "mode" style="display:none">
+	<p>mode is 2,6,43</p>
+	</div>
+	<div id = "median" style="display:none">
+	<p>median is 18.5</p>
+	</div>
+	<div id = "method" style="display:none">
+	<p>The reduce() method reduces the array to a single value.</p>
+	<p>The reduce() method executes a provided function for each value of the array. </p>
+	<p>The return value of the function is stored in an accumulator.</p>
+	<p>The example code can be :</p>
+	<p>Function getSum(total,num)
+	<p>{</p>
+	<p>return total+num;</p>	
+	<p>}</p>
+	</div>
+	<script>
+	function step1()
+	{
+		var mean = document.getElementById("mean");
+		mean.style.display = "block";
+	}
+	function step2()
+	{
+		var mode = document.getElementById("mode");
+		mode.style.display = "block";
+	}
+	function step3()
+	{
+		var median = document.getElementById("median");
+		median.style.display = "block";
+	}
+	function step4()
+	{
+		var method = document.getElementById("method");
+		method.style.display = "block";
+	}
+	</script>
+	</html>
